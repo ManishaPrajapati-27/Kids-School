@@ -1,0 +1,490 @@
+@import url(./variable.css);
+/* Navbar */
+.navbar {
+  background-color: var(--primary);
+}
+
+.navbar ul li a {
+  color: var(--light);
+  /* transition: all 3s ease; */
+}
+
+.navbar ul li a:hover {
+  color: #d9fbfc;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-style: calc(100%-50px);
+}
+
+.navbar .dropdown a {
+  background: none;
+}
+
+.navbar .dropdown .dropdown-menu {
+  background: #6bced1;
+  --bs-dropdown-min-width: 9rem !important;
+}
+
+/* .navbar .dropdown .dropdown-menu a {
+  color: var(--light-alt);
+} */
+/* Navbar End*/
+
+/* Hero Section  */
+.hero {
+  position: relative;
+}
+
+.hero .rocket {
+  position: absolute;
+  bottom: 178px;
+  right: 0;
+  height: 64px;
+}
+
+.hero .rocket img {
+  animation: rocket 4s infinite alternate;
+  transition: ease 0.5s;
+}
+
+@keyframes rocket {
+  0% {
+    transform: translateY(-25%);
+  }
+  50% {
+    transform: translateY(25%) scale(1.2);
+  }
+}
+
+.hero .plane {
+  position: absolute;
+  bottom: 145px;
+  right: 542px;
+  height: 64px;
+}
+
+.hero .plane img {
+  transform: translateX(-10%);
+  animation: plane 4s infinite alternate;
+  transition: ease 0.5s;
+}
+
+@keyframes plane {
+  0% {
+    transform: translateX(-25%);
+    transition: ease 0.5s;
+  }
+  50% {
+    transform: translateX(25%) scale(1.2);
+    transition: ease 0.5s;
+  }
+}
+
+.hero .heart {
+  position: absolute;
+  bottom: 305px;
+  right: 506px;
+  height: 64px;
+}
+
+.hero .heart img {
+  transform: translateY(-10%);
+  animation: heart 2s infinite alternate;
+  transition: ease 0.5s;
+  /* width: 80px;
+  height: 80px; */
+}
+
+@keyframes heart {
+  0% {
+    transform: translateY(-15%);
+    transition: ease 0.5s;
+  }
+  50% {
+    transform: translateY(15%) scale(1.2);
+    transition: ease 0.5s;
+  }
+}
+
+.hero .animal {
+  position: absolute;
+  bottom: 374px;
+  right: 20px;
+  height: 64px;
+}
+
+.hero .animal img {
+  transform: translateX(-10%);
+  animation: animal 3s infinite alternate;
+  transition: ease 0.5s;
+  /* width: 80px;
+  height: 80px; */
+}
+
+@keyframes animal {
+  0% {
+    transform: translateX(15%);
+    transition: ease 0.5s;
+  }
+  50% {
+    transform: translateX(-15%) scale(1.1);
+    transition: ease 0.5s;
+  }
+  /* 100% {
+    transform: translateX(-20%) scale(1.2);
+    transition: ease 0.5s;
+  } */
+}
+
+.hero .hero-text {
+  position: relative;
+  /* bottom: 180px; */
+  /* left: 100px; */
+  margin-top: -270px;
+  bottom: 170px;
+  color: var(--light);
+  font-family: var(--sans-serif-alt);
+}
+
+.hero .arrow {
+  position: absolute;
+  bottom: 184px;
+  right: 868px;
+  height: 100px;
+  transform: rotate(-40deg);
+}
+
+.hero .arrow img {
+  transform: translateX(-10%);
+  animation: arrow 3s infinite alternate;
+  transition: ease 0.5s;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(-10%);
+    transition: ease 0.5s;
+  }
+  50% {
+    transform: translateX(10%) scale(1.1);
+    transition: ease 0.5s;
+  }
+}
+
+/* Hero Section End */
+
+/* Education section */
+.education {
+  position: relative;
+  padding-bottom: 0;
+}
+
+.education .rocket {
+  position: absolute;
+  height: 80px;
+  top: 70px;
+  animation-name: rocket;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+.education .rocket1 {
+  position: absolute;
+  height: 80px;
+  bottom: 0;
+}
+
+.education h2 {
+  color: var(--secondary);
+}
+
+.education i {
+  color: rgb(241, 117, 117);
+}
+
+.education .education-img {
+  height: 80vh;
+}
+
+.education .education-img img {
+  border-radius: 10px;
+}
+
+.education .box-red {
+  position: absolute;
+  right: 165px;
+  bottom: 35px;
+  background: rgb(233, 97, 97);
+  transform: rotate(30deg);
+  box-shadow: 0px 0px 0px 2px #ed8686;
+}
+
+.education svg {
+  fill: currentColor;
+  height: auto;
+  /* max-width: 20vmin; */
+  transform-origin: center;
+  /* width: 20%; */
+  background: rgb(241, 117, 117);
+  border-radius: 50%;
+  /* box-shadow: 10px 10px 10px rgb(248, 179, 179); */
+  position: relative;
+  bottom: 52px;
+  left: 45%;
+  outline: 12px solid #ebbbbbbd;
+}
+
+.education svg text {
+  text-transform: uppercase;
+}
+/* Education section end */
+
+/* Program Section */
+.program {
+  background: url(../images/program.png);
+  background-size: cover;
+  height: 100%;
+  padding: 154px 0;
+}
+
+.program .card {
+  border: 2px dashed var(--light);
+  background: none;
+}
+
+.program .card:hover {
+  /* border: 2px dashed var(--light); */
+  background: rgb(12, 126, 233);
+  border: none;
+  transition: 0.5s all ease;
+}
+
+.program .card img {
+  height: 64px;
+  width: 64px;
+  margin-bottom: 20px;
+}
+
+/* Program Section end */
+
+/* Students Section */
+.students {
+  padding-top: 0;
+  position: relative;
+}
+
+.students h2 {
+  color: var(--secondary);
+  margin-top: 150px;
+}
+
+.students .student-img {
+  width: 440px;
+}
+
+.students .student-img img {
+  position: relative;
+  margin-left: 140px;
+}
+
+.students .box-pink {
+  position: absolute;
+  right: 465px;
+  /* background: rgb(214, 134, 147); */
+  transform: rotate(30deg);
+  /* box-shadow: 0px 0px 0px 2px rgb(219, 165, 174); */
+}
+
+.students .box-green {
+  position: absolute;
+  right: 115px;
+  top: 40px;
+  background: rgb(19, 150, 19);
+  transform: rotate(30deg);
+  box-shadow: 0px 0px 0px 2px rgb(93, 204, 121);
+}
+
+.students .box-green2 {
+  position: absolute;
+  right: 650px;
+  top: 230px;
+  /* background: rgb(214, 134, 147); */
+  transform: rotate(0deg);
+  /* box-shadow: 0px 0px 0px 2px rgb(219, 165, 174); */
+}
+
+.students .box-blue {
+  position: absolute;
+  right: 540px;
+  bottom: 100px;
+  background: rgb(23, 123, 218);
+  transform: rotate(0deg);
+  box-shadow: 0px 0px 0px 2px rgb(112, 186, 230);
+}
+
+.students .box-pink2 {
+  position: absolute;
+  right: 325px;
+  bottom: 0;
+}
+
+.students .circle {
+  position: absolute;
+  left: 25px;
+  bottom: 0;
+}
+
+/* Students Section end */
+
+/* Choose class */
+
+.choose-class {
+  background: url(../images/choose-background.png);
+  background-size: cover;
+  height: 100%;
+}
+
+.choose-class .choose-card {
+  background: var(--light);
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 10px;
+}
+
+.choose-class .choose-card .fa-star {
+  color: rgb(219, 187, 5);
+}
+
+.choose-class .choose-card {
+  color: var(--ternary);
+}
+
+.choose-class .choose-card img {
+  border-radius: 10px;
+  height: 240px;
+}
+/* Choose class end */
+
+/* trainer section */
+.trainer {
+  position: relative;
+}
+.trainer .team {
+  /* margin: 20px 0; */
+  margin: 10px 75px;
+}
+
+.trainer .rocket {
+  position: absolute;
+  height: 80px;
+  top: 70px;
+  right: 20px;
+  transform: scaleX(-1);
+}
+
+.trainer .plane {
+  position: absolute;
+  bottom: 65px;
+  height: 64px;
+  left: 150px;
+  /* right: 542px; */
+  /* height: 64px; */
+}
+
+.trainer .plane img {
+  transform: translateX(-10%);
+  animation: plane 4s infinite alternate;
+  transition: ease 0.5s;
+}
+
+@keyframes plane {
+  0% {
+    transform: translateX(-25%);
+    transition: ease 0.5s;
+  }
+  50% {
+    transform: translateX(25%) scale(1.2);
+    transition: ease 0.5s;
+  }
+}
+
+.trainer .team h4 {
+  color: var(--ternary);
+}
+
+.trainer .team p {
+  color: rgb(201, 52, 201);
+}
+
+.trainer .team .team-img {
+  height: 140px;
+  width: 135px;
+}
+
+.trainer .team .team-img img {
+  border-radius: 50%;
+}
+
+.trainer .circle {
+  position: absolute;
+  left: 40%;
+  bottom: 0px;
+}
+
+.trainer .circle2 {
+  position: absolute;
+  background: rgb(81, 194, 81);
+  bottom: 22%;
+  left: 1170px;
+}
+
+/* trainer section end */
+
+/* Subscribe Section */
+.subscribe {
+  background: url(../images/subscribe.png);
+  /* padding-top: 170px; */
+  padding-bottom: 0;
+}
+
+.subscribe .text-subs {
+  padding-top: 110px;
+  padding-bottom: 60px;
+}
+
+.subscribe .email-button input {
+  border-radius: 50px !important;
+  padding: 12px;
+}
+
+.subscribe .email-button button {
+  position: relative;
+  bottom: 45px;
+  left: 429px;
+  padding: 8px 30px;
+  border-radius: 50px !important;
+}
+
+.subscribe img {
+  width: 120%;
+}
+/* Subscribe Section end */
+
+/* Footer */
+.footer {
+  background: #a449fe;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+.footer i {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* Footer end */
+/* Media Queries */
